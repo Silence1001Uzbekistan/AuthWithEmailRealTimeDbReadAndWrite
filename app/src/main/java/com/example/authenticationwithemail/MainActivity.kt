@@ -86,6 +86,12 @@ class MainActivity : AppCompatActivity() {
                 //doSomething(user)
                 Toast.makeText(this, user!!.email, Toast.LENGTH_SHORT).show()
 
+                //Ro'yxatdan o'tib bo'ldi
+                //Nimadir ish bajarish mumkin
+
+                startActivity(Intent(this,RealTimeDBActivity::class.java))
+
+
             } else {
 
                 Toast.makeText(this, task.exception?.message, Toast.LENGTH_SHORT).show()
